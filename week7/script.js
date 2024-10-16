@@ -48,22 +48,22 @@ function initializeGrid() {
             cell.classList.add('cell');
 
             // Insert custom image for each cell based on its contents
-            let img = document.createElement('img');
-            img.style.width = '80px';
-            img.style.height = '80px';
+            let images = document.createElement('images');
+            images.style.width = '80px';
+            images.style.height = '80px';
 
             if (i === agentPos.x && j === agentPos.y) {
-                img.src = 'img/player.png'; // Player/agent image
+                images.src = 'images/player.png'; // Player/agent image
             } else if (i === wumpusPos.x && j === wumpusPos.y) {
-                img.src = 'img/wumpus.png'; // Wumpus image
+                images.src = 'images/wumpus.png'; // Wumpus image
             } else if (i === goldPos.x && j === goldPos.y) {
-                img.src = 'img/gold.png'; // Gold image
+                images.src = 'images/gold.png'; // Gold image
             } else if (i === pitPos.x && j === pitPos.y) {
-                img.src = 'img/pit.png'; // Pit image
+                images.src = 'images/pit.png'; // Pit image
             }
 
-            if (img.src) {
-                cell.appendChild(img);
+            if (images.src) {
+                cell.appendChild(images);
             }
             gridElement.appendChild(cell);
         }
