@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wumpus World Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Wumpus World Game</h1>
+        <div class="grid" id="grid"></div>
+
+        <div class="control-buttons" id="controls">
+            <button onclick="move('up')">Up</button>
+            <button onclick="move('left')">Left</button>
+            <button onclick="move('down')">Down</button>
+            <button onclick="move('right')">Right</button>
+            <button onclick="shoot()">Shoot</button>
+            <button onclick="grab()">Grab</button>
+            <button onclick="release()">Release</button>
+            <button onclick="autoMove()">Auto Move</button>
+        </div>
+
+        <div class="message" id="message">The adventure begins! Beware of the Wumpus and traps.</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
